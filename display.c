@@ -284,7 +284,7 @@ FONT ASC8X16 =
 uint8_t array_rotate[32];
 
 // ===== Function Definitions ==================
-void TFT_Init_Ili9341(void)
+void ILI9341_Init(void)
 {
 	// Reset TFT controller (Ili9341)
 	RESET_HIGH;
@@ -457,7 +457,7 @@ void usDelay(volatile uint16_t count)
 }
 
 //rotate screen at desired orientation
-void ili9341_setRotation(uint8_t m)
+void ILI9341_SetRotation(uint8_t m)
 {
 	uint8_t rotation;
 

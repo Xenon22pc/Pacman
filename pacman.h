@@ -36,4 +36,7 @@ extern SPRITE PinkGhost;
 extern SPRITE Pacman;
 
 extern uint8_t pacmanMap[30][40];
-extern uint8_t map_bit[];
+
+void start_game();
+void pacman_run(uint8_t dir);
+void ghost_run(SPRITE *ghost);

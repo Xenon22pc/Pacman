@@ -3,13 +3,20 @@
 #include "pacman.h"
 /* USER CODE END Includes */
 
+//-------------------------------------------
+//-------------------------------------------
 
 /* USER CODE BEGIN PV */
 uint8_t str[100];
-uint8_t JOY_DIR = LEFT;
+
+uint8_t JOY_DIR = LEFT,
+		prev_dir;
+
 int16_t point=0;
 /* USER CODE END PV */
 
+//-------------------------------------------
+//-------------------------------------------
 
 /* USER CODE BEGIN 0 */
 uint8_t btnRead()
@@ -21,6 +28,15 @@ uint8_t btnRead()
 }
 /* USER CODE END 0 */
 
+//-------------------------------------------
+//-------------------------------------------
+
+/* USER CODE BEGIN 2 */
+    start_game();
+/* USER CODE END 2 */
+
+//-------------------------------------------
+//-------------------------------------------
 
 /* USER CODE BEGIN 3 */
 	  btnRead();
@@ -34,5 +50,6 @@ uint8_t btnRead()
 	  sprintf(str, "%u",point);
 	  LCD_Puts(320-8*3, 100, str, clWhite, clBlack, &ASC8X16);
 	  HAL_Delay(200);
+
   }
-  /* USER CODE END 3 */
+/* USER CODE END 3 */

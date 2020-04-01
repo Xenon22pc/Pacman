@@ -4,6 +4,13 @@
 /* USER CODE END Includes */
 
 
+/* USER CODE BEGIN PV */
+uint8_t str[100];
+uint8_t JOY_DIR = LEFT;
+int16_t point=0;
+/* USER CODE END PV */
+
+
 /* USER CODE BEGIN 0 */
 uint8_t btnRead()
 {
